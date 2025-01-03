@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabela Dinâmica</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css"
+/>
+</head>
+<body>
+    <div class="container">
+  <h2>Clientes</h2>
+  <form id="clienteForm">
+    <label>Nome do Cliente:</label>
+    <input type="text" id="clienteNome" required />
+
+    <label>Milhas Desejadas:</label>
+    <input type="number" id="milhas" step="1" required />
+
+    <label>Preço:</label>
+    <input type="number" id="preco" step="0.01" required />
+
+    <label>Taxas:</label>
+    <input type="number" id="taxas" step="0.01" required />
+
+    <button type="submit">Adicionar Cliente</button>
+  </form>
+
+  <table id="clienteTable">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Milhas</th>
+        <th>Preço</th>
+        <th>Taxas</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h2>Fornecedores</h2>
+  <form id="fornecedorForm">
+    <label>Nome do Fornecedor:</label>
+    <input type="text" id="fornecedorNome" required />
+
+    <label>Custo:</label>
+    <input type="text" id="custo" step="0.01" required />
+
+    <label>Companhia:</label>
+    <input type="text" id="companhia" required></select>
+
+    <label>Cliente Relacionado:</label>
+    <select id="clienteRelacionado" required></select>
+
+    <button type="submit">Adicionar Fornecedor</button>
+  </form>
+
+  <table id="fornecedorTable">
+    <thead>
+      <tr>
+        <th>Fornecedor</th>
+        <th>Custo</th> 
+        <th>Companhia</th>
+        <th>Cliente</th>
+       
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h2>Transações</h2>
+  <table id="transacaoTable">
+    <thead>
+      <tr>
+        <th>Cliente</th>
+        <th>Fornecedor</th>
+        <th>Preço</th>
+        <th>Custo</th>
+        <th>Milhas</th>
+        <th>Taxas</th>
+        <th>Valor Pago</th>
+        <th>Foi Planilhado?</th>
+        <th>Emissor foi Avisado?</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <script src="script.js"></script>
+</div>
+</body>
+</html>

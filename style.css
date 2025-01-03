@@ -19,7 +19,7 @@ th {
 }
 
 .container {
-    width: 50%; /* A largura será 80% da largura da tela */
+    width: 60%; /* A largura será 80% da largura da tela */
     max-width: 1200px; /* A largura máxima será 1200px */
     min-width: 600px; /* A largura mínima será 600px */
     padding: 20px;
